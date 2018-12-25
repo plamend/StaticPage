@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   name: stoiko
 spec:
-  replicas: 1
-  revisionHistoryLimit: 1
+  replicas: 2
+  revisionHistoryLimit: 1.1
   template:
     metadata:
       labels:
@@ -55,7 +55,7 @@ spec:
           serviceName: stoiko
           servicePort: 80
         path: /
-  - host: stoiko.wtfitio.net
+  - host: www.stoiko.wtfitio.net
     http:
       paths:
       - backend:
