@@ -4,7 +4,7 @@ metadata:
   name: stoiko
 spec:
   replicas: 2
-  revisionHistoryLimit: 1.1
+  revisionHistoryLimit: 2
   template:
     metadata:
       labels:
