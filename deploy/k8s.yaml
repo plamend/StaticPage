@@ -40,19 +40,3 @@ spec:
   selector:
     app: stoiko
 ---
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: stoiko
-  annotations:
-	kubernetes.io/ingress.class: "nginx"
-	
-spec:
-    rules:
-  - host: stoiko.wtfitio.net
-    http:
-      paths:
-      - backend:
-          serviceName: stoiko
-          servicePort: 80
-        path: /
