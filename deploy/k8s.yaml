@@ -45,7 +45,7 @@ kind: Ingress
 metadata:
   name: stoiko
   annotations:
-    kubernetes.io/ingress.class: "nginx"
+    kubernetes.io/ingress.class: nginx
 	kubernetes.io/ingress.global-static-ip-name: stoiko
 spec:
     rules:
